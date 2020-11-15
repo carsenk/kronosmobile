@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_color">#69633c</color>
+    <color name="purple">#69633c</color>
+    <color name="darkPurple">#131313</color>
+    <color name="primary_dark">#131313</color>
+    <color name="bootsplash_background">#131313</color>
+</resources>
