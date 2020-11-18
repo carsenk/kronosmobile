@@ -1,5 +1,6 @@
 import {
 	Linking,
+	LogBox,
 	Vibration
 } from "react-native";
 import AsyncStorage from "@react-native-community/async-storage";
@@ -33,6 +34,9 @@ const {
 const {
 	getTransaction
 } = require("../utils/electrum");
+
+//Ignore YellowBox Warnings for now
+LogBox.ignoreLogs(['Setting a timer']);
 
 export const setItem = async (key, value) => {
 	try {
@@ -482,6 +486,7 @@ const createTransaction = ({ address = "", transactionFee = 2, amount = 0, confi
 						try {isOpReturn = !!target.script;} catch (e) {}
 						if (isOpReturn) {
 							txb.addOutput(target.script, target.value, denariuspos.networks.denarius);
+							//txb.addOutput(target.address, target.value, denariuspos.networks.denarius);
 						} else {
 							txb.addOutput(target.address, target.value, denariuspos.networks.denarius);
 						}

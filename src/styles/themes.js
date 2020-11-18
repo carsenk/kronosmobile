@@ -28,7 +28,7 @@ export const themes = {
 		gradient: ["#000000", "#000000", "#000000"],
 		transparent: "transparent",
 		background: "#333333",
-		background2: "#2f2d3a",
+		background2: "#222222",
 		background3: "#444444",
 		button: "transparent",
 		card: "#555555",
